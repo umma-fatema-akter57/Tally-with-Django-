@@ -1,0 +1,83 @@
+{% extends 'base.html'%}
+
+{%block title%}
+Web page
+{%endblock%}
+
+
+{%block content%}
+<div class="div">
+<div class="t"> 
+    <div class="m"
+        style="background: linear-gradient(0deg, #FFFFFF 90%, #C30208 20%);">
+       <br>
+   <div class="border">
+<h3></b> দোকানের টালিখাতা রেজিস্ট্রেশন রিপোর্ট</b></h3> 
+   </div>
+
+<p style="color:red">*Required</p>
+</div>
+</div>
+<div class="n">
+<div class="b">
+    <h4>দোকানের টালিখাতার মোবাইল নাম্বার লিখুন<span class="required-indicator"
+        style="color: red"> *</span></h4><br>
+        <div class="s"><br>
+        <input type="binary"required placeholder="Your answer" >
+    </div>
+</div>
+</div>
+<div class="o">
+    <div class="a">
+    <h4>দোকানের ছবি সংযুক্ত করুন<span class="required-indicator" style="color: red"> *</span></h4>
+    <h7>ছবিটি সাইনবোর্ডসহ দোকান খোলা অবস্থায় সম্মুখভাগের হতে হবে। কোন সেলফি গ্রহণযোগ্য নয়।</h7>
+    <br>
+    <h7>ছবির সর্বোচ্চ সাইজঃ 10MB এর বেশি গ্রহণযোগ্য নয়।</h7><br><br>
+    <div class="in">
+        <input type="file" name="shop_image" accept="image/*" required="" id="id_shop_image"
+        class="w-100" placeholder="Add file">
+    <br></div>
+    </div>
+</div>
+    <div class="q">
+        <div class="line">
+        <h4>দোকানটির ব্যবসায়ের ধরন লিখুন<span class="required-indicator" style="color: red"> *</span></h4>
+        <div class="l">
+        <h7>যে যে সেবা গুলো পাওয়া যায় তার উপর টিক দিন</h7><br><br>
+    
+        <div class="menu">
+            <input type="checkbox"value="মুদি দোকান">মুদি দোকান<br><br>
+            <input type="checkbox" value="মোবাইল রিচার্জের দোকান">মোবাইল রিচার্জের দোকান<br><br>
+            <input type="checkbox" value="ওষুধের দোকান">ওষুধের দোকান<br><br>
+            <input type="checkbox"value="মোবাইল ব্যাংকিং" >মোবাইল ব্যাংকিং<br><br>
+            <input type="checkbox"value="অন্যান্য">অন্যান্য <br> 
+        </div>
+    </div>
+        </div>
+    </div>
+        <div class="r">
+            <div class="u">
+            <h4>শিওরক্যাশ এসআর ওয়ালেট নাম্বার লিখুন<span class="required-indicator"style="color: red"> *</span></h4>
+            <h7>আপনার শিওরক্যাশ এর ১২ সংখ্যার এসআর ওয়ালেট নাম্বারটি দিতে হবে।</h7>
+            <br>
+            <br>  
+            <div class="b">
+                <input type="binary"required placeholder="Your answer" >
+        </div>
+        </div>
+    </div>
+
+<br>
+
+
+            <form>
+                <div class="submit">
+                    <button id="submit button"value="Submit">Submit </button>
+                </div>
+              
+            </form>
+              
+
+        </div>
+
+{%endblock%}
